@@ -1,0 +1,1 @@
+type PlanType = "monthly" | "yearly";

@@ -1,0 +1,107 @@
+$prefix: "clr";
+$enable-dark-mode: false;
+// default light
+
+$color-vars: (
+    text: (
+        default: var(--clr-blue-400),
+        default-secondary: var(--clr-neutral-White),
+        interactive-primary: var(--clr-primary-100),
+        interactive-primary-hover: var(--clr-primary-200),
+        interactive-secondary: var(--clr-blue-800),
+        interactive-danger: var(--clr-primary-300),
+        interactive-danger-hover: var(--clr-primary-400)
+    ),
+    bg: (
+        default: var(--clr-gray-200),
+        default-secondary: var(--clr-neutral-White),
+        interactive-primary: var(--clr-primary-100),
+        interactive-secondary: var(--bg-default),
+        interactive-primary-hover: var(--clr-primary-200),
+        interactive-danger: var(--clr-primary-300),
+        interactive-danger-hover: var(--clr-primary-400)
+    ),
+    outline: (
+        color: var(--clr-primary-100),
+    ),
+    border: (
+        main: var(--clr-blue-400),
+        focus: var(--clr-blue-800),
+        secondary: var(--clr-blue-450)
+    ),
+    body: (
+        text: var(--text-default),
+        bg: var(--bg-default)
+    ),
+    icon: (
+        bg: var(--bg-interactive-primary),
+        counter: (
+            bg: var(--clr-primary-200-dark)
+        ),
+        reply: (
+            bg: var(--text-interactive-primary)
+        ),
+        edit: (
+            bg: var(--text-interactive-primary)
+        ),
+        delete: (
+            bg: var(--text-interactive-primary)
+        )
+    ),
+    btn: (
+        primary: (
+            bg: var(--bg-interactive-primary),
+            bg-hover: var(--bg-interactive-primary-hover),
+            text: var(--text-default-secondary)
+        ),
+        counter: (
+            bg: var(--body-bg),
+            text: var(--text-interactive-primary),
+        ),
+        reply: (
+            text: var(--text-interactive-primary),
+            text-hover: var(--text-interactive-primary-hover),
+        ),
+        edit: (
+            text: var(--text-interactive-primary),
+            text-hover: var(--text-interactive-primary-hover),
+        ),
+        delete: (
+            text: var(--bg-interactive-danger),
+            text-hover: var(--text-interactive-danger-hover),
+        ),
+        module-yes: (
+            bg: var(--clr-blue-800),
+            bg-hover: var(--clr-blue-400),
+            text: var(--text-default-secondary),
+        ),
+        module-no: (
+            bg: var(--bg-interactive-danger),
+            bg-hover: var(--bg-interactive-danger-hover),
+            text: var(--text-default-secondary),
+        )
+    ),
+    comment:(
+        bg: var(--bg-default-secondary),
+        text: var(--body-text),
+    ),
+    sub-comment:(
+        border: var(--border-secondary),
+    ),
+    form:(
+        bg: var(--bg-default-secondary),
+    ),
+    input:(
+        border: var(--border-secondary),
+    ),
+    selection: (
+        bg: var(--clr-primary-100),
+        text: var(--clr-neutral-White)
+    ),
+    scrollbar: (
+        color: var(--clr-primary-red),
+        track-bg: var(--clr-neutral-off-white),
+        thumb-bg: var(--clr-primary-red),
+        thumb-bg-hover: var(--clr-primary-orange)
+    )
+);

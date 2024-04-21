@@ -1,0 +1,82 @@
+@use "sass:color";
+
+/// @name $palettes
+/// A map of color palettes, where keys are identifiers mapped to a given color
+/// @type Color
+/// @prop {String} keys - Keys are identifiers mapped to a given color
+/// @prop {Map} values - Values are actual after key: value
+
+// oklch palette
+
+// https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl
+
+$palettes-regular: (
+    neutral: (
+        white: #ffffff,
+        black: #000000
+    ),
+
+    gray: (
+        100: #fafbff,
+        200: #f0f6ff,
+        500: #d6d9e6,
+        600: #9699ab,
+    ),
+
+    blue: (
+        100: #bfe2fd,
+        200: #adbeff,
+        300: #473dff,
+        800: #02295a,
+    ),
+    red:(
+        400: #ed3548,
+    ),
+    primary: (
+        base : var(--clr-neutral-white), 
+    ),
+    accent:(
+        base: var(--clr-blue-800),
+        secondary: var(--clr-blue-300),
+        tertiary: var(--clr-blue-100),
+    ),
+    danger:(
+        base: var(--clr-red-400),
+    )
+) !default;
+
+$palettes-type2: (
+    neutral: (
+        "white": oklch(100% 0 0),
+        "black": oklch(0 0 0)
+    ),
+    gray: (
+        100: #fafbff,
+        200: #f0f6ff,
+        500: #d6d9e6,
+        600: #9699ab,
+    ),
+
+    blue: (
+        100: #bfe2fd,
+        200: #adbeff,
+        300: #473dff,
+        800: #02295a,
+    ),
+    red:(
+        400: #ed3548,
+    ),
+    primary: (
+        base : var(--clr-neutral-white), 
+    ),
+    accent:(
+        base: var(--clr-blue-800),
+        secondary: var(--clr-blue-300),
+        tertiary: var(--clr-blue-100),
+    ),
+    danger:(
+        base: var(--clr-red-400),
+    )
+) !default;
+
+

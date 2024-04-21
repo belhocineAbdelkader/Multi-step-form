@@ -13,12 +13,12 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Marine blue: hsl(213, 96%, 18%)  // hover
-- Marine blue: oklch(0.29 0.1 256.37)  // hover
-- Purplish blue: hsl(243, 100%, 62%) // accent-200
-- Pastel blue: hsl(228, 100%, 84%) // accent-300
-- Light blue: hsl(206, 94%, 87%) 
-- Strawberry red: hsl(354, 84%, 57%) // danger
+- Marine blue: hsl(213, 96%, 18%)  
+- Marine blue: oklch(0.29 0.1 256.37)  
+- Purplish blue: hsl(243, 100%, 62%)
+- Pastel blue: hsl(228, 100%, 84%)
+- Light blue: hsl(206, 94%, 87%)
+- Strawberry red: hsl(354, 84%, 57%)
 
 ### Neutral
 
@@ -26,7 +26,7 @@ The designs were created to the following widths:
 - Light gray: hsl(229, 24%, 87%)
 - Magnolia: hsl(217, 100%, 97%)
 - Alabaster: hsl(231, 100%, 99%)
-- White: hsl(0, 0%, 100%) // primary
+- White: hsl(0, 0%, 100%)
 
 ## Typography
 

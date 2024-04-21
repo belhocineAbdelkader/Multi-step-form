@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+@layer root {
+    :root {
+        @include tokensVars($vars);
+        @media (prefers-contrast: more) {
+            --fw-body: 700;
+        }
+        @media (prefers-contrast: less) {
+            --fw-body: 200;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+@layer button {
+    button,
+    .btn {
+        appearance: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn {
+        border-radius: var(--btn-border-radius);
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+
+        /* span inside the btn that will hold icon or icon and text */
+        .btn-wrap {
+            --btn-gap: 0.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--btn-gap);
+            background-color: transparent;
+            position: relative;
+        }
+
+        &.btn-primary {
+            margin-bottom: auto;
+            width: 7.125rem;
+            .btn-wrap {
+                background-color: var(--btn-primary-bg);
+                color: var(--btn-primary-text);
+                padding: 0.5rem 2rem;
+                border-radius: var(--radius-200);
+                transition: background-color .2s linear;
+                
+                &:hover {
+                    background-color: var(--btn-primary-bg-hover);
+                    border-radius: var(--radius-200);
+                }
+            }
+        }
+
+        &.reply-comment:not(.btn-primary), &.edit:not(.btn-primary){
+            .btn-wrap {
+                color: var(--btn-reply-text);
+                transition: color .1s ;
+            
+                &:hover {
+                    color: var(--btn-reply-text-hover);
+
+                    .icon-reply, .icon-edit {
+                        --icon-bg: var(--btn-reply-text-hover);
+                    }
+                }
+            }
+        }
+
+        &.delete{
+            .btn-wrap {
+                color: var(--btn-delete-text);
+                transition: color .1s ;
+            
+                &:hover {
+                    color: var(--btn-delete-text-hover);
+
+                    .icon-delete{
+                        --icon-bg: var(--btn-delete-text-hover);
+                    }
+                }
+            }
+        }
+
+        &.vote{
+            .btn-wrap {
+                transition: background-color .2s linear;
+
+                &:hover {
+                    .icon-plus, .icon-minus{
+                        --icon-bg: var(--bg-interactive-primary);
+                    }
+                }
+            }
+        }
+
+        &.btn-dialog{
+            width: 12.813rem;
+            .btn-wrap {
+                padding: 0.5rem 1rem;
+                border-radius: var(--radius-200);
+                color: var(--btn-primary-text);
+                transition: background-color .2s linear;
+            }
+
+            &.delete{
+                .btn-wrap {
+                    color: var(--btn-primary-text);
+                    background-color: var(--btn-delete-text);
+                    color: var(--btn-primary-text);                    
+                    &:hover {
+                        background-color: var(--btn-delete-text-hover);
+                    }
+                }
+            }
+
+            &.cancel{
+                .btn-wrap {
+                    background-color: var(--clr-blue-800);
+                    color: var(--btn-primary-text);
+                }
+            }
+
+        }
+    }
+
+    /* Button States */
+
+    .btn:focus {
+        .btn-wrap {
+            border: 2px solid var(--btn-secondary-border-focus);
+            box-shadow: var(--btn-focus-effect);
+        }
+    }
+}

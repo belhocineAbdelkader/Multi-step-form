@@ -25,15 +25,15 @@
       :root {
         --clr-neutral-white: oklch(100% 0 0);
         --clr-neutral-black: oklch(0 0 0);
-        --clr-gray-100: #fafbff;
-        --clr-gray-200: #f0f6ff;
-        --clr-gray-500: #d6d9e6;
-        --clr-gray-600: #9699ab;
-        --clr-blue-100: #bfe2fd;
-        --clr-blue-200: #adbeff;
-        --clr-blue-300: #473dff;
-        --clr-blue-800: #02295a;
-        --clr-red-400: #ed3548;
+        --clr-gray-100: oklch(0.99 0.01 0);
+        --clr-gray-200: oklch(0.97 0.01 258.51);
+        --clr-gray-500: oklch(0.89 0.02 275.75);
+        --clr-gray-600: oklch(0.69 0.03 278.23);
+        --clr-blue-100: oklch(0.9 0.05 241.41);
+        --clr-blue-200: oklch(0.81 0.09 272.86);
+        --clr-blue-300: oklch(0.52 0.27 273.83);
+        --clr-blue-800: oklch(0.29 0.1 256.75);
+        --clr-red-400: oklch(0.62 0.22 21.39);
         --clr-primary-base: var(--clr-neutral-white);
         --clr-accent-base: var(--clr-blue-800);
         --clr-accent-secondary: var(--clr-blue-300);

@@ -3,14 +3,15 @@
 
 $pseudo: "clr-";
 @layer colors-vars {
+
     /* Fallback styles for browsers not supporting display-p3 */
     :root {
-        @include tokensVars($palettes-regular, $pseudo)
+        @include tokensVars($palettes-regular, $pseudo);
     }
     /* Check if the browser supports display-p3 color space */
     @supports (color: oklch(100% 0 0)) {
         :root {
-            @include tokensVars($palettes-type2, $pseudo)
+            @include tokensVars($palettes-type2, $pseudo);
         }
     }
 }

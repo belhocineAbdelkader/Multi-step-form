@@ -6,10 +6,6 @@
 /// @prop {String} keys - Keys are identifiers mapped to a given color
 /// @prop {Map} values - Values are actual after key: value
 
-// oklch palette
-
-// https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl
-
 $palettes-regular: (
     neutral: (
         white: #ffffff,
@@ -45,26 +41,31 @@ $palettes-regular: (
     )
 ) !default;
 
+
+
+// oklch palette
+
+// https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl
 $palettes-type2: (
     neutral: (
         "white": oklch(100% 0 0),
         "black": oklch(0 0 0)
     ),
     gray: (
-        100: #fafbff,
-        200: #f0f6ff,
-        500: #d6d9e6,
-        600: #9699ab,
+        100: oklch(0.99 0.01 0),
+        200: oklch(0.97 0.01 258.51),
+        500: oklch(0.89 0.02 275.75),
+        600: oklch(0.69 0.03 278.23),
     ),
 
     blue: (
-        100: #bfe2fd,
-        200: #adbeff,
-        300: #473dff,
-        800: #02295a,
+        100: oklch(0.9 0.05 241.41),
+        200: oklch(0.81 0.09 272.86),
+        300: oklch(0.52 0.27 273.83),
+        800: oklch(0.29 0.1 256.75),
     ),
     red:(
-        400: #ed3548,
+        400: oklch(0.62 0.22 21.39),
     ),
     primary: (
         base : var(--clr-neutral-white), 

@@ -41,6 +41,7 @@ function confirmationForm() {
 }
 window.addEventListener("DOMContentLoaded", function () {
     var monthlyOrYearly = new MonthlyOrYearly("#planType");
+    monthlyOrYearly;
 });
 var MonthlyOrYearly = /** @class */ (function () {
     /**

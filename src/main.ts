@@ -4,6 +4,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 `
 
+
 let currentStep = 1;
 
 function nextStep(step: number) {
@@ -57,6 +58,7 @@ function confirmationForm() {
 
 window.addEventListener("DOMContentLoaded",() => {
 	const monthlyOrYearly = new MonthlyOrYearly("#planType");
+    monthlyOrYearly
 });
 
 class MonthlyOrYearly {
